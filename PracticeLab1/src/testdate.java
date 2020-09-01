@@ -28,11 +28,17 @@ public class testdate {
 		  
 		TreeMap<Date, String> syllabus = new TreeMap(); // use compare to as basis
 		syllabus.put(d1, "Charles");
-		syllabus.put(d2, "Zia");
+		syllabus.put(d2, "Nikka");
 		syllabus.put(d3, "Catherine");
-		syllabus.put(d4, "Nikka");
+		syllabus.put(d4, "Joreen");
 		
 		 for(Map.Entry<Date, String> topic: syllabus.entrySet()) {
 			if(topic.getKey().month == 9 && topic.getKey().year == 2002) {
 				System.out.println(topic.getValue());
-			}else { 
+			}else {
+				System.out.println(topic.getValue() + " does not fall in September 2001");
+			}
+			//System.out.println(topic.getKey() + "," + topic.getValue());
+		}
+	}
+}
